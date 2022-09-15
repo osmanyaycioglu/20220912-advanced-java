@@ -1,5 +1,7 @@
 package org.training.advanced.collections;
 
+import com.google.common.base.Strings;
+
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -20,6 +22,13 @@ public class ListRun {
                                                  "8",
                                                  "6",
                                                  "7");
+
+        for (String str:stringList1) {
+            System.out.println(str);
+        }
+
+        stringList1.forEach(System.out::println);
+
         System.out.println(stringList1);
         Collections.sort(stringList1);
         System.out.println(stringList1);
